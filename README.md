@@ -4,7 +4,7 @@ As described in Daniel Huffman's [Creating Shaded Relief in Blender](https://som
 
 Requirements: [GDAL/OGR](https://gdal.org/)
 
-#How to Use
+# How to Use
 1) Clone/download the repo.
 2) Make sure GDAL/OGR is installed. (gdalinfo --version)
 3) Create a vector specifying your area of interest and add to the project folder. Default points to "box.geojson", to update open "blenderize.sh" with your text editor of choice and update the "bounding_box" variable.
