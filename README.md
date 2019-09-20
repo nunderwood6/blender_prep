@@ -1,1 +1,3 @@
 Script to expedite preparing DEM's for Blender.
+
+As described in Daniel Huffman's [Creating Shaded Relief in Blender](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/), significant work is necessary to find and prepare elevation data prior to using it in Blender. This work often includes mosaicing, reprojecting, clipping, resampling, rescaling, and translating DEM's(digital elevation models). While some of these steps require decisions specific to the project, many are repetitive. This repo contains a bash script which utilizes open source command line tools to expedite this work.
