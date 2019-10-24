@@ -3,7 +3,7 @@
 # GDAL/OGR
 
 ###parameters
-target_projection="+proj=laea +lat_0=15.271832308917661 +lon_0=-90.615234375" #proj4 or epsg
+target_projection="+proj=laea +lat_0=16.311241898200027 +lon_0=-90.1318359375" #proj4 or epsg
 bounding_box=box.geojson #in WGS84
 
 ##############################
@@ -56,6 +56,7 @@ echo "Cropping raster..."
 gdal_translate -projwin $(ogr_extent blenderize_temp/box_proj.shp) \
 -of Gtiff \
 -ot UInt16 \
+-r bilinear \
 blenderize_temp/a2_projected.tif blenderize_temp/a3_cropped.tif
 
 #get min/max values
